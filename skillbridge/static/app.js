@@ -1,0 +1,2 @@
+const toggle=document.getElementById('menuToggle');const nav=document.getElementById('mainNav');if(toggle&&nav){toggle.addEventListener('click',()=>{nav.classList.toggle('nav-open');toggle.setAttribute('aria-expanded',nav.classList.contains('nav-open')?'true':'false')})}
+document.querySelectorAll('textarea[maxlength],input[maxlength]').forEach(el=>{el.addEventListener('input',()=>{el.setCustomValidity(el.maxLength>0&&el.value.length>el.maxLength?'Please shorten this text.':'')})});
